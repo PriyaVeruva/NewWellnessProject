@@ -1,0 +1,315 @@
+.bgImage1 {
+	background-image: url("https://mairawellness.com/wp-content/uploads/2025/06/surgery-cosmetology-inject-botox-in-breast-.jpg");
+	background-position: center 35%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 40vh;
+}
+.child1 {
+	position: absolute;
+	left: 50%;
+	bottom: 35%;
+	transform: translateX(-50%);
+	/* background: rgba(200, 165, 103, 0.65); */
+	padding: 1vh;
+	/* border-radius: 12px; */
+	/* backdrop-filter: blur(8px); */
+	/* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); */
+	text-align: center;
+	width: 70%;
+}
+.child1 h2 {
+	color: #2f0025;
+	font-size: 40px;
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+section {
+	padding: 3vh;
+	text-align: center;
+	font-size: 36px;
+	font-family: "Lato", sans-serif;
+	color: #2f0025;
+}
+section h2::after {
+	content: "";
+	display: block;
+	width: 10%;
+	height: 3px;
+	background: rgba(200, 165, 103, 0.65);
+	margin: 10px auto 0;
+	border-radius: 2px;
+}
+
+.servicesGrid {
+	padding: 6vh 8vw;
+	background: linear-gradient(#ffffff, #f8f4f2);
+}
+.serviceCard {
+	background: #fff;
+	border-radius: 20px;
+	padding: 30px;
+	text-align: center;
+	box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease-in-out;
+}
+.serviceCard:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+.serviceCard h3 {
+	font-size: 32px;
+	color: #2f0025;
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-family: "Lato", sans-serif;
+}
+.serviceCard p {
+	font-size: 18px;
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 25px;
+	font-family: "Lato", sans-serif;
+}
+.serviceBtn {
+	background: #c8a567;
+	color: #2f0025;
+	border: none;
+	padding: 12px 28px;
+	border-radius: 25px;
+	font-size: 15px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+
+.serviceBtn:hover {
+	background: #b48c4e;
+}
+.servicesOffer {
+	padding: 5vh 4vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 3rem;
+	scroll-margin-top: 100px;
+}
+
+/* Card */
+.servicesOffer .contentSection {
+	border-radius: 30px;
+	padding: 3rem 2rem 2rem;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	transition: 0.35s ease;
+}
+
+/* Hover UI */
+.servicesOffer .contentSection:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.servicesOffer img {
+	max-width: 100%;
+	border-radius: 20px;
+	margin-bottom: 1.5rem;
+	transition: 0.4s ease;
+}
+
+.servicesOffer .contentSection:hover img {
+	transform: scale(1.04);
+}
+
+/* Main title */
+.servicesOffer span:first-of-type {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #111;
+	margin-bottom: 0.6rem;
+	font-family: "Inter", sans-serif;
+	letter-spacing: -0.5px;
+}
+
+/* Subtitle */
+.servicesOffer span:last-of-type {
+	font-size: 1rem;
+	color: #666;
+	line-height: 1.5;
+	max-width: 80%;
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
+}
+.bookAppointment {
+	background-image: url("https://mairawellness.com/wp-content/uploads/2025/06/cosmetician-gives-chin-botox-injection-to-patient.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+.sections {
+	position: absolute;
+	inset: 0;
+	background-color: #2f0025;
+	opacity: 0.85;
+	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.bookAppointment {
+	display: flex;
+	justify-content: space-evenly;
+	align-self: center;
+}
+.sections {
+	display: flex;
+	align-items: center;
+	padding: 10vh;
+	justify-content: space-evenly;
+}
+.firstSection {
+	padding: 5vh;
+}
+.firstSection h5 {
+	color: #c8a567;
+	font-size: 18px;
+	font-family: Inter, Sans-serif;
+	font-weight: 500;
+	line-height: 3em;
+}
+.firstSection h2 {
+	font-size: 36px;
+	font-weight: 600;
+	font-family: Lato, sans-serif;
+	color: #c8a567;
+	margin-bottom: 20px;
+}
+.firstSection span {
+	font-size: 16px;
+	font-family: Heebo, sans-serif;
+	color: #e1e3ea;
+	font-weight: 400;
+}
+.firstSection h3 {
+	font-size: 18px;
+	font-family: Lato, sans-serif;
+	color: #c8a567;
+	margin-block: 20px;
+}
+/* .secondSection {
+	width: 50%;
+} */
+.timings {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	border-bottom: 1px solid #7b798c;
+	padding: 15px 0;
+}
+.timings span {
+	color: white;
+	font-size: 16px;
+	font-family: Heebo, sans-serif;
+	font-weight: 400;
+}
+.beforeAfterSection {
+	margin: 60px auto;
+	text-align: center;
+}
+
+.beforeAfterSection h2 {
+	font-size: 36px;
+	font-family: "Lato", sans-serif;
+	color: #2f0025;
+}
+
+.treatmentTypes {
+	margin: 30px 0;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+}
+
+.tab {
+	padding: 12px 24px;
+	border-radius: 25px;
+	border: none;
+	background: #eee;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.tab.active {
+	background: #2f0025;
+	color: white;
+}
+
+.comparisonBox {
+	display: flex;
+	gap: 20px;
+	margin-top: 30px;
+}
+
+.imageBox {
+	position: relative;
+	width: 50%;
+}
+
+.imageBox img {
+	width: 100%;
+	border-radius: 12px;
+}
+
+.label {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	padding: 4px 10px;
+	font-size: 12px;
+	border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+	.bgImage1 {
+		height: 35vh;
+	}
+
+	.child1 {
+		bottom: 10%;
+		padding: 15px 25px;
+	}
+
+	.child1 h2 {
+		font-size: 28px;
+	}
+	.servicesOffer {
+		grid-template-columns: 1fr;
+	}
+	.sections {
+		flex-direction: column;
+		padding: 0vh;
+	}
+}
+
+@media (max-width: 480px) {
+	.bgImage1 {
+		height: 32vh;
+	}
+
+	.child1 {
+		bottom: 8%;
+		padding: 12px 20px;
+	}
+
+	.child1 h2 {
+		font-size: 22px;
+	}
+}
