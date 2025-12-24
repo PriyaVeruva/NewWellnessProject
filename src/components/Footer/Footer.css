@@ -1,6 +1,6 @@
 /* ======================= Base Footer Styles ======================= */
 .footer {
-	background: linear-gradient(135deg, #3a002a, #29001f);
+	background: linear-gradient(135deg, #3bb9a2, #29001f);
 	color: #fff;
 	padding: 60px 30px 20px;
 	font-family: "Inter", sans-serif;
@@ -26,7 +26,7 @@
 	margin-bottom: 20px;
 }
 .footer-title {
-	color: #d8b35d;
+	color: white;
 	font-size: 18px;
 	font-weight: 600;
 	margin-bottom: 10px;
@@ -36,7 +36,7 @@
 	content: "";
 	width: 60px;
 	height: 2px;
-	background: #d8b35d;
+	background: #c8a567;
 	position: absolute;
 	left: 0;
 	bottom: -5px;
@@ -153,8 +153,8 @@
 	justify-content: center;
 	width: 35px;
 	height: 35px;
-	background: #d8b35d;
-	color: #3a002a;
+	background: #3bb9a2;
+	color: white;
 	border-radius: 50%;
 	font-size: 16px;
 	transition: 0.3s ease;

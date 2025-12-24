@@ -2,25 +2,23 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { headerMenu } from "./data";
 import "./Header.css";
+import headerLogo from "../../assets/header/wellness.png";
 const Header = () => {
 	const [open, setOpen] = useState(false);
-	const handleClose = () => {
-		setOpen(!open);
+	const [activeMenu, setActiveMenu] = useState(null);
+	const closeBackdrop = () => {
+		setActiveMenu(null);
 	};
 	return (
 		<header>
 			<div className="header-container">
-				{/* Branding */}
+				{/* Logo */}
 				<div className="logo">
 					<Link to="/">
-						<img
-							src="https://mairawellness.com/wp-content/uploads/2025/06/Maira_Logo-removebg-preview.png"
-							loading="lazy"
-						/>
+						<img src={headerLogo} loading="lazy" />
 					</Link>
 				</div>
 
-				{/* Hamburger Icon (Mobile) */}
 				<button
 					className="menu-toggle"
 					onClick={() => setOpen(!open)}
@@ -28,33 +26,67 @@ const Header = () => {
 					☰
 				</button>
 
-				{/* Navigation */}
 				<nav className={open ? "nav open" : "nav"}>
-					{open ? (
-						<span className="close_btn" onClick={handleClose}>
-							X
-						</span>
-					) : (
-						""
-					)}
 					<ul>
 						{headerMenu.map((item) => (
 							<li key={item.label}>
-								<Link
-									to={item.link}
-									className={
-										item.highlight
-											? "highlight-btn"
-											: ""
-									}
-								>
-									{item.label}
-								</Link>
+								{item.dropdown ? (
+									<Link
+										to={item.link}
+										className={
+											item.highlight
+												? "highlight-btn"
+												: ""
+										}
+										onClick={() =>
+											setActiveMenu(item)
+										}
+									>
+										{item.label} ▾
+									</Link>
+								) : (
+									<Link
+										to={item.link}
+										className={
+											item.highlight
+												? "highlight-btn"
+												: ""
+										}
+									>
+										{item.label}
+									</Link>
+								)}
 							</li>
 						))}
 					</ul>
 				</nav>
 			</div>
+
+			{/* BACKDROP + DROPDOWN PANEL */}
+			{activeMenu && (
+				<>
+					<div
+						className="header-backdrop"
+						onClick={closeBackdrop}
+					/>
+
+					<div className="menu-panel">
+						<h3>{activeMenu.label}</h3>
+						<ul>
+							{activeMenu.dropdown.map((sub) => (
+								<li key={sub.label}>
+									<Link
+										to={sub.link}
+										onClick={closeBackdrop}
+									>
+										{sub.label}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
+				</>
+			)}
 		</header>
 	);
 };

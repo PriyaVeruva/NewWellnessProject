@@ -1,19 +1,4 @@
-/* =========================
-   THEME VARIABLES
-========================= */
-:root {
-	--primary: #3bb9a2;
-	--primary-dark: #2f9f8b;
-	--accent: #c8a567;
-	--text-dark: #2f0025;
-	--text-muted: #666;
-	--bg-light: #f8f4f2;
-}
-
-/* =========================
-   HERO SECTION
-========================= */
-.services .bgImage1 {
+.bgImage1 {
 	background-image: url("https://mairawellness.com/wp-content/uploads/2025/06/surgery-cosmetology-inject-botox-in-breast-.jpg");
 	background-position: center 35%;
 	background-repeat: no-repeat;
@@ -21,86 +6,78 @@
 	position: relative;
 	height: 40vh;
 }
-
 .child1 {
 	position: absolute;
 	left: 50%;
 	bottom: 35%;
 	transform: translateX(-50%);
+	/* background: rgba(200, 165, 103, 0.65); */
+	padding: 1vh;
+	/* border-radius: 12px; */
+	/* backdrop-filter: blur(8px); */
+	/* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); */
 	text-align: center;
 	width: 70%;
 }
-
 .child1 h2 {
-	color: var(--text-dark);
+	color: #2f0025;
 	font-size: 40px;
 	font-family: "Lato", sans-serif;
 	font-weight: 700;
+	line-height: 1.2em;
 	text-transform: uppercase;
+	letter-spacing: 1px;
 }
-
-/* =========================
-   SECTION TITLE
-========================= */
 section {
 	padding: 3vh;
 	text-align: center;
 	font-size: 36px;
 	font-family: "Lato", sans-serif;
-	color: var(--text-dark);
+	color: #2f0025;
 }
-
 section h2::after {
 	content: "";
 	display: block;
 	width: 10%;
 	height: 3px;
-	background: var(--primary);
+	background: rgba(200, 165, 103, 0.65);
 	margin: 10px auto 0;
 	border-radius: 2px;
 }
 
-/* =========================
-   SERVICES GRID
-========================= */
 .servicesGrid {
 	padding: 6vh 8vw;
-	background: linear-gradient(#ffffff, var(--bg-light));
+	background: linear-gradient(#ffffff, #f8f4f2);
 }
-
 .serviceCard {
 	background: #fff;
 	border-radius: 20px;
 	padding: 30px;
 	text-align: center;
-	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-	transition: 0.3s ease;
+	box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+	transition: all 0.3s ease-in-out;
 }
-
 .serviceCard:hover {
-	transform: translateY(-6px);
-	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
-
 .serviceCard h3 {
 	font-size: 32px;
-	color: var(--text-dark);
+	color: #2f0025;
 	margin-bottom: 15px;
 	font-weight: 700;
 	font-family: "Lato", sans-serif;
 }
-
 .serviceCard p {
 	font-size: 18px;
-	color: var(--text-muted);
+	color: #666;
 	line-height: 1.6;
 	margin-bottom: 25px;
+	font-family: "Lato", sans-serif;
 }
-
-/* BUTTON */
 .serviceBtn {
-	background: var(--primary);
-	color: #fff;
+	background: #c8a567;
+	color: #2f0025;
 	border: none;
 	padding: 12px 28px;
 	border-radius: 25px;
@@ -111,22 +88,17 @@ section h2::after {
 }
 
 .serviceBtn:hover {
-	background: var(--primary-dark);
+	background: #b48c4e;
 }
-
-/* =========================
-   SERVICES WE OFFER
-========================= */
 .servicesOffer {
 	padding: 5vh 4vw;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: 1fr 1fr 1fr;
 	gap: 3rem;
-	scroll-margin-top: 100px;
 }
 
+/* Card */
 .servicesOffer .contentSection {
-	background: #fff;
 	border-radius: 30px;
 	padding: 3rem 2rem 2rem;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
@@ -134,15 +106,16 @@ section h2::after {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	/* border-top: 5px solid var(--primary); */
 	transition: 0.35s ease;
 }
 
+/* Hover UI */
 .servicesOffer .contentSection:hover {
 	transform: translateY(-10px);
 	box-shadow: 0 25px 40px rgba(0, 0, 0, 0.12);
 }
 
+/* Image */
 .servicesOffer img {
 	max-width: 100%;
 	border-radius: 20px;
@@ -151,131 +124,126 @@ section h2::after {
 }
 
 .servicesOffer .contentSection:hover img {
-	transform: scale(1.05);
+	transform: scale(1.04);
 }
 
+/* Main title */
 .servicesOffer span:first-of-type {
 	font-size: 1.4rem;
 	font-weight: 700;
-	color: var(--text-dark);
+	color: #111;
 	margin-bottom: 0.6rem;
 	font-family: "Inter", sans-serif;
+	letter-spacing: -0.5px;
 }
 
+/* Subtitle */
 .servicesOffer span:last-of-type {
 	font-size: 1rem;
-	color: var(--text-muted);
+	color: #666;
 	line-height: 1.5;
 	max-width: 80%;
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
 }
-
-/* =========================
-   BOOK APPOINTMENT
-========================= */
 .bookAppointment {
 	background-image: url("https://mairawellness.com/wp-content/uploads/2025/06/cosmetician-gives-chin-botox-injection-to-patient.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	height: 100vh;
+	background-size: cover;
+	background-position: center center;
 	position: relative;
 }
-
 .sections {
 	position: absolute;
 	inset: 0;
-	background: linear-gradient(135deg, #3bb9a2, #29001f);
-	opacity: 0.9;
+	background-color: #2f0025;
+	opacity: 0.85;
+	transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.bookAppointment {
+	display: flex;
+	justify-content: space-evenly;
+	align-self: center;
+}
+.sections {
 	display: flex;
 	align-items: center;
-	justify-content: space-evenly;
 	padding: 10vh;
+	justify-content: space-evenly;
 }
-
-.sections .firstSection {
+.firstSection {
 	padding: 5vh;
-	max-width: 480px;
 }
-
 .firstSection h5 {
-	color: #eafffb;
+	color: #c8a567;
 	font-size: 18px;
-	font-family: Inter, sans-serif;
+	font-family: Inter, Sans-serif;
+	font-weight: 500;
+	line-height: 3em;
 }
-
 .firstSection h2 {
 	font-size: 36px;
 	font-weight: 600;
 	font-family: Lato, sans-serif;
-	color: #fff;
+	color: #c8a567;
 	margin-bottom: 20px;
 }
-
 .firstSection span {
 	font-size: 16px;
 	font-family: Heebo, sans-serif;
-	color: #e1fffa;
+	color: #e1e3ea;
+	font-weight: 400;
 }
-
 .firstSection h3 {
 	font-size: 18px;
 	font-family: Lato, sans-serif;
-	color: #fff;
-	margin: 20px 0;
+	color: #c8a567;
+	margin-block: 20px;
 }
-
+.secondSection{
+	width: 50%;
+}
 .timings {
 	display: flex;
 	justify-content: space-between;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	align-items: flex-start;
+	border-bottom: 1px solid #7b798c;
 	padding: 15px 0;
 }
-
 .timings span {
-	color: #fff;
+	color: white;
 	font-size: 16px;
 	font-family: Heebo, sans-serif;
+	font-weight: 400;
 }
 
-/* =========================
-   BEFORE / AFTER (OPTIONAL)
-========================= */
-.label {
-	background: var(--primary);
-	color: #fff;
-	padding: 4px 10px;
-	border-radius: 6px;
-	font-size: 12px;
-	position: absolute;
-	top: 12px;
-	left: 12px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
 @media (max-width: 768px) {
-	.servicesOffer {
-		grid-template-columns: 1fr;
+	.bgImage1 {
+		height: 35vh;
 	}
 
-	.sections {
-		flex-direction: column;
-		padding: 5vh 3vw;
-		text-align: center;
+	.child1 {
+		bottom: 10%;
+		padding: 15px 25px;
 	}
 
-	.firstSection {
-		padding: 0;
+	.child1 h2 {
+		font-size: 28px;
 	}
 }
 
 @media (max-width: 480px) {
-	.child1 h2 {
-		font-size: 22px;
+	.bgImage1 {
+		height: 32vh;
 	}
 
-	.firstSection h2 {
-		font-size: 28px;
+	.child1 {
+		bottom: 8%;
+		padding: 12px 20px;
+	}
+
+	.child1 h2 {
+		font-size: 22px;
 	}
 }

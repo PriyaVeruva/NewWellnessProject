@@ -19,7 +19,7 @@ const Services = () => {
 	};
 
 	return (
-		<div>
+		<div className="services">
 			<div className="bgImage1">
 				<div className="child1">
 					{/* <h2>Services</h2> for time beign just commented it out*/}

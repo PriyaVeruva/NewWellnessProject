@@ -6,6 +6,7 @@ import {
 	FaPhoneAlt,
 	FaMapMarkerAlt,
 } from "react-icons/fa";
+import footerLogo from "../../assets/header/wellness.png";
 
 const Footer = () => {
 	return (
@@ -14,7 +15,7 @@ const Footer = () => {
 				{/* About */}
 				<div className="footer-col">
 					<img
-						src="https://mairawellness.com/wp-content/uploads/2025/06/Maira_Logo-removebg-preview.png"
+						src={footerLogo}
 						alt="Maira Logo"
 						className="footer-logo"
 					/>
