@@ -1,10 +1,11 @@
-
+import { bodyToningData } from "./data";
+import CommonComponent from "../../../components/CommonComponent/CommonComponent";
 const BodyToning = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return (
+		<div>
+			<CommonComponent data={bodyToningData} />
+		</div>
+	);
+};
 
-export default BodyToning
+export default BodyToning;

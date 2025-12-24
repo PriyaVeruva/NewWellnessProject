@@ -10,20 +10,25 @@ const CommonComponent = ({ data }) => {
 			block: "start",
 		});
 	};
-const excludedPaths = [
-  "/weight/body-composition",
-  "/skin/whitening",
-  "/skin/radiant",
-  "/skin/pigmentation",
-  "/skin/melasma",
-  "/skin/chemical-peel",
-  "/skin/mole-wart",
-  "/skin/under-eye",
-  "/slimming/rf-therapy",
-  "/slimming/figure-correction",
-  "/slimming/body-therapies"
-];
-const pathNames = !excludedPaths.includes(window.location.pathname);
+	const excludedPaths = [
+		"/weight/body-composition",
+		"/skin/whitening",
+		"/skin/radiant",
+		"/skin/pigmentation",
+		"/skin/melasma",
+		"/skin/chemical-peel",
+		"/skin/mole-wart",
+		"/skin/under-eye",
+		"/slimming/rf-therapy",
+		"/slimming/figure-correction",
+		"/slimming/body-therapies",
+		"/slimming/body-toning",
+		"/slimming/body-detox",
+		"/slimming/lipo-laser",
+		"/slimming/body-sculpting",
+		"/slimming/breast-firming",
+	];
+	const pathNames = !excludedPaths.includes(window.location.pathname);
 	return (
 		<div className="spot-page">
 			{/* HERO */}
@@ -72,7 +77,7 @@ const pathNames = !excludedPaths.includes(window.location.pathname);
 			</section>
 
 			{/* TREATMENTS */}
-			{pathNames ?
+			{pathNames ? (
 				<section className="spot-section light-bg">
 					<h2 className="center">{data?.treatments?.title}</h2>
 					<div className="card-grid">
@@ -85,7 +90,7 @@ const pathNames = !excludedPaths.includes(window.location.pathname);
 						})}
 					</div>
 				</section>
-				:
+			) : (
 				<div className="analysis-section">
 					<h3>{data.treatments.title}</h3>
 
@@ -95,15 +100,13 @@ const pathNames = !excludedPaths.includes(window.location.pathname);
 								<div className="analysis-card" key={i}>
 									<img src={ele.image} alit="" />
 									<h4>{ele.title}</h4>
-									<p>
-										{ele.subtitle}
-									</p>
+									<p>{ele.subtitle}</p>
 								</div>
-							)
+							);
 						})}
 					</div>
 				</div>
-			}
+			)}
 			{/* WHY MAIRA */}
 			<div className="whyChooseWrapper">
 				<div className="whyChooseInner">

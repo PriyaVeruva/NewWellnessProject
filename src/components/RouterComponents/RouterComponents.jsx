@@ -38,36 +38,90 @@ const RouterComponents = () => {
 			<Route path="/about" element={<AboutUs />} />
 			{/*WeightManagement Routes */}
 
-			<Route path="/weight/spot-reduction" element={<SpotReduction />} />
-			<Route path="/weight/body-composition" element={<BodyCompositionAnalysis />} />
-			<Route path="/weight/aroma-veda" element={<AromaVedaTherapy />} />
+			<Route
+				path="/weight/spot-reduction"
+				element={<SpotReduction />}
+			/>
+			<Route
+				path="/weight/body-composition"
+				element={<BodyCompositionAnalysis />}
+			/>
+			<Route
+				path="/weight/aroma-veda"
+				element={<AromaVedaTherapy />}
+			/>
 			<Route path="/weight/weight-loss" element={<WeightLoss />} />
 			<Route path="/weight/inch-loss" element={<InchLoss />} />
-			<Route path="/skin/whitening" element={<SkinWhiteningTreatment />} />
+			<Route
+				path="/skin/whitening"
+				element={<SkinWhiteningTreatment />}
+			/>
 			<Route path="/skin/radiant" element={<SkinRadiantTreatment />} />
 			<Route path="/skin/wrinkle" element={<Wrinkle />} />
-			<Route path="/skin/pigmentation" element={<PigmentationCare />} />
+			<Route
+				path="/skin/pigmentation"
+				element={<PigmentationCare />}
+			/>
 			<Route path="/skin/melasma" element={<MelasmaTreatment />} />
 			<Route path="/skin/chemical-peel" element={<ChemicalPeel />} />
 			<Route path="/skin/under-eye" element={<UnderEyeDarkCircle />} />
-			<Route path="/skin/mole-wart" element={<BestMoleAndWartRemovalClinic />} />
+			<Route
+				path="/skin/mole-wart"
+				element={<BestMoleAndWartRemovalClinic />}
+			/>
 			{/*Slimmin Routes */}
-			<Route path="/slimming/cryolipolysis" element={<Cryolipolysis />} />
+			<Route
+				path="/slimming/cryolipolysis"
+				element={<Cryolipolysis />}
+			/>
 			<Route path="/slimming/rf-therapy" element={<RFTherapy />} />
-			<Route path="/slimming/ultrasonic-cavitation" element={<UltrasonicCavitation />} />
-			<Route path="/slimming/figure-correction" element={<FigureCorrection />} />
+			<Route
+				path="/slimming/ultrasonic-cavitation"
+				element={<UltrasonicCavitation />}
+			/>
+			<Route
+				path="/slimming/figure-correction"
+				element={<FigureCorrection />}
+			/>
 			<Route path="/slimming/body-firming" element={<BodyFirming />} />
-			<Route path="/slimming/body-therapies" element={<BodyTherapies />} />
+			<Route
+				path="/slimming/body-therapies"
+				element={<BodyTherapies />}
+			/>
 			<Route path="/slimming/sculpture" element={<Sculpture />} />
 			<Route path="/slimming/body-toning" element={<BodyToning />} />
-			<Route path="/slimming/aloe-wrap-treatment" element={<AloeWrapTreatment />} />
-			<Route path="/slimming/body-detoxification" element={<BodyDetoificationTreatment />} />
-			<Route path="/slimming/non-surgical-liposuction" element={<NonSurgicalLiposuction />} />
-			<Route path="/slimming/lipo-laser" element={<LipoLaserProgram />} />
-			<Route path="/slimming/mesolipolysis" element={<MesolipoysisProgram />} />
-			<Route path="/slimming/body-sculpting" element={<BodySculpting />} />
-			<Route path="/slimming/breast-reduction" element={<BreastReduction />} />
-			<Route path="/slimming/breast-firming" element={<BreastFirming />} />
+			<Route
+				path="/slimming/aloe-wrap-treatment"
+				element={<AloeWrapTreatment />}
+			/>
+			<Route
+				path="/slimming/body-detox"
+				element={<BodyDetoificationTreatment />}
+			/>
+			<Route
+				path="/slimming/non-surgical-liposuction"
+				element={<NonSurgicalLiposuction />}
+			/>
+			<Route
+				path="/slimming/lipo-laser"
+				element={<LipoLaserProgram />}
+			/>
+			<Route
+				path="/slimming/mesolipolysis"
+				element={<MesolipoysisProgram />}
+			/>
+			<Route
+				path="/slimming/body-sculpting"
+				element={<BodySculpting />}
+			/>
+			<Route
+				path="/slimming/breast-reduction"
+				element={<BreastReduction />}
+			/>
+			<Route
+				path="/slimming/breast-firming"
+				element={<BreastFirming />}
+			/>
 		</Routes>
 	);
 };

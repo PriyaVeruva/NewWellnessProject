@@ -1,10 +1,8 @@
+import CommonComponent from "../../../components/CommonComponent/CommonComponent";
+import { lipoLaserProgramData } from "./data";
 
 const LipoLaserProgram = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+	return <CommonComponent data={lipoLaserProgramData} />;
+};
 
-export default LipoLaserProgram
+export default LipoLaserProgram;
