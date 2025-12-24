@@ -1,4 +1,8 @@
 export const spotReductionData = {
+	bgImage:{
+image:"https://mairawellness.com/wp-content/uploads/2025/07/spot-reduction.png"
+	},
+
 	hero: {
 		title: "Spot Reduction Treatment In Bangalore",
 		subtitle:

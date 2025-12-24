@@ -1,5 +1,10 @@
+import CommonComponent from "../../../components/CommonComponent/CommonComponent";
+import { bodyCompositionData } from "./data";
+
 const BodyCompositionAnalysis = () => {
-	return <div>BodyCompositionAnalysis</div>;
+	return (
+		<CommonComponent data={bodyCompositionData}/>
+	);
 };
 
 export default BodyCompositionAnalysis;

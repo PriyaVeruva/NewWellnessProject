@@ -1,7 +1,8 @@
-import React from "react";
+import CommonComponent from "../../../components/CommonComponent/CommonComponent";
+import { weightLossData } from "./data";
 
 const WeightLoss = () => {
-	return <div>WeightLoss</div>;
+	return <CommonComponent data={weightLossData}/>
 };
 
 export default WeightLoss;

@@ -1,10 +1,12 @@
-.spot-page .bgImage1 {
-	background-image: url("https://mairawellness.com/wp-content/uploads/2025/07/spot-reduction.png");
-	background-position: center 35%;
+.spot-page .bgImage1 img {
+	/* background-image: url("https://mairawellness.com/wp-content/uploads/2025/07/spot-reduction.png"); */
+	/* background-position: center 35%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	position: relative;
-	height: 40vh;
+	position: relative; */
+	height: 50vh;
+	width:100%;
+	object-fit: cover;
 }
 .child1 {
 	position: absolute;
@@ -24,6 +26,7 @@
 	align-items: center;
 	gap: 40px;
 	padding: 80px;
+	background: #f1fbf9;
 }
 .spot-hero img {
 	width: 45%;
@@ -32,6 +35,7 @@
 .spot-hero-text h1 {
 	font-size: 42px;
 	margin-bottom: 16px;
+	color:#134e4a
 }
 
 .spot-hero-text p {
@@ -60,17 +64,19 @@ button {
 .spot-section h1 {
 	font-size: 42px;
 	margin-bottom: 16px;
+	color:#134e4a
 }
 .spot-section p {
 	font-size: 24px;
 	margin-bottom: 24px;
 }
 .light-bg {
-	background: #faf3f2;
+	background: #f1fbf9;
 }
 
 .center {
 	text-align: center;
+	color:#134e4a
 }
 
 .intro-text {
@@ -84,6 +90,7 @@ button {
 	display: flex;
 	gap: 50px;
 	align-items: center;
+	background: #f1fbf9;
 }
 
 .two-col.reverse {
@@ -104,6 +111,7 @@ button {
 }
 
 .card {
+	color:#3bb9a2;
 	background: #fff;
 	padding: 24px;
 	border-radius: 16px;
@@ -136,12 +144,16 @@ li {
 
 .benefits-wrapper {
 	align-items: center;
+		display: flex;
+	gap: 50px;
+	align-items: center;
+
 }
 
 /* IMAGE */
 .benefits-image img {
 	width: 100%;
-	/* max-width: 480px; */
+	max-width: 480px;
 	border-radius: 24px;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
@@ -207,6 +219,56 @@ li {
 	align-items: center;
 	justify-content: space-evenly;
 }
+.analysis-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.analysis-section h3 {
+  font-size: 35px;
+  margin-bottom: 40px;
+  color: #134e4a;
+}
+
+.analysis-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+
+.analysis-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: left;
+    transition: 0.5s ease-in-out;
+
+}
+.analysis-card:hover{
+	transform: translateY(-10px);
+}
+.analysis-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.analysis-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color:#3bb9a2;
+}
+
+.analysis-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555;
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
 	.benefits-wrapper {

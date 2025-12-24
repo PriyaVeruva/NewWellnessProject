@@ -1,7 +1,8 @@
-import React from "react";
+import { inchLossData } from "./data";
+import CommonComponent from "../../../components/CommonComponent/CommonComponent";
 
 const InchLoss = () => {
-	return <div>InchLoss</div>;
+	return <CommonComponent data={inchLossData}/>
 };
 
 export default InchLoss;
