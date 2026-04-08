@@ -30,10 +30,20 @@ import BodySculpting from "../../pages/Slimming/BodySculpting/BodySculpting";
 import MesolipoysisProgram from "../../pages/Slimming/MesolipolysisProgram/MesolipoysisProgram";
 import BodyDetoificationTreatment from "../../pages/Slimming/BodyDetoificationTreatment/BodyDetoificationTreatment";
 import BodyFirming from "../../pages/Slimming/BodyFirming/BodyFirming";
+import HairTransplant from "../../pages/Hair/HairTransplant/HairTransplant";
+import AntiDandruff from "../../pages/Hair/AntiDandruffTreatment1/AntiDandruff";
+import PRPHairLoss from "../../pages/Hair/PRPHairLossTreatment/PRPHairLoss";
+import QR678 from "../../pages/Hair/QR678/QR678";
+import Silorgisis from "../../pages/Hair/Silorgisis/Silorgisis";
+import HairFall from "../../pages/Hair/HairFallTreatment/HairFall";
+import GFC from "../../pages/Hair/GFC/GFC";
+import Home from "../../pages/Home/Home";
 
 const RouterComponents = () => {
 	return (
 		<Routes>
+			<Route path="/" element={<Home />} />
+
 			<Route path="/services" element={<Services />} />
 			<Route path="/about" element={<AboutUs />} />
 			{/*WeightManagement Routes */}
@@ -122,6 +132,14 @@ const RouterComponents = () => {
 				path="/slimming/breast-firming"
 				element={<BreastFirming />}
 			/>
+			<Route path="/hair/transplant" element={<HairTransplant />} />
+			<Route path="/hair/antidandruff" element={<AntiDandruff />} />
+			<Route path="hair/prp" element={<PRPHairLoss />} />
+			<Route path="/hair/hairfall" element={<HairFall />} />
+			<Route path="/hair/gfc" element={<GFC />} />
+			<Route path="/hair/qr678" element={<QR678 />} />
+			<Route path="/hair/silorgisis" element={<Silorgisis />} />
+			{/* <Route path="/contact" element={<LaserTreatment />} /> */}
 		</Routes>
 	);
 };
